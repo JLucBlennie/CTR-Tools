@@ -1,0 +1,211 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-size: xx-large;
+}
+
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 12;
+    padding: 0.4rem;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav>ul>li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav>ul>li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 150px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    /* max-width: 600px;*/
+}
+
+h1,
+h2 {
+    font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+input {
+    font-size: 16px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+}
+
+footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+}
+
+footer,
+footer a {
+    color: #dfdfe2;
+}
+
+address {
+    text-align: center;
+    padding: 0.3em;
+}
+
+td.selection {
+    text-align: center;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    /* make the table scrollable if height is more than 200 px  */
+    height: 600px;
+    /* gives an initial height of 200px to the table */
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    /* make the table heads sticky */
+    top: 0px;
+    /* table head will be placed from the top of the table and sticks to it */
+}
+
+table {
+    border-collapse: collapse;
+    /* make the table borders collapse to each other */
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #eee;
+}
+
+table a {
+    color: #000
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+tbody tr:hover {
+    background-color: yellowgreen;
+}
+
+tbody tr.selectedCheckbox {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+tbody tr.selectedCheckbox a {
+    color: #fff;
+}
+
+tbody tr.selectedLigne {
+    background-color: orange;
+    color: #000;
+}
+
+tbody tr.selectedLigne a {
+    color: #000;
+}
+
+/* Sélectionner une ligne précise */
+tbody tr:nth-child() {
+    background-color: teal;
+    color: #fff;
+}
+
+tbody tr:nth-child() a {
+    color: #fff;
+}
+
+tbody tr:nth-child() td:nth-child() {
+    background-color: deeppink;
+    color: #fff;
+}
