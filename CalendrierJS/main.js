@@ -2,6 +2,7 @@ const fs = require('fs');
 import data from './data/test.json' assert { type: 'json' };
 import typesEvenement from './resources/typeEvenement.json' assert {type: 'json'};
 import demandeurs from './resources/demandeur.json' assert {type: 'json'};
+import moniteurs from './resources/moniteurs.json' assert {type: 'json'};
 
 // URL pour acceder au resultat des forms : https://docs.google.com/spreadsheets/d/1xMJvX7KZPLax24rcWe2aC76xEAmW4qlRKG-iwH91UF0/gviz/tq?tqx=out:json&tq=select+*&gid=1075595583
 
@@ -86,6 +87,89 @@ function findEvenementById(idEvenement) {
     return evenementRes;
 }
 
+function findMoniteurById(idMoniteur) {
+    var moniteurRes = { id: "", nom: "", prenom: "", niveau: "" };
+
+    moniteurs.forEach(element => {
+        if (element.id === idMoniteur) {
+            moniteurRes = element;
+        }
+    });
+
+    return moniteurRes;
+}
+
+function findMoniteurByName(nameMoniteur) {
+    var moniteurRes = { id: "", nom: "", prenom: "", niveau: "" };
+    nameMoniteur = nameMoniteur.trim();
+
+    moniteurs.forEach(element => {
+        var isFound = false;
+        if (nameMoniteur.includes("@")) {
+            // Cas d'un mail
+            var name = nameMoniteur.split("@")[0];
+            console.log("mail : ", name);
+            if (name.includes(".")) {
+                name.split(".").forEach(partName => {
+                    if (!isFound && element.nom.toUpperCase().includes(partName.toUpperCase())) {
+                        moniteurRes = element;
+                        isFound = true;
+                    }
+                });
+            }
+            if (name.includes("-")) {
+                name.split("-").forEach(partName => {
+                    if (!isFound && element.nom.toUpperCase().includes(partName.toUpperCase())) {
+                        moniteurRes = element;
+                        isFound = true;
+                    }
+                });
+            }
+            if (name.includes("_")) {
+                name.split("_").forEach(partName => {
+                    if (!isFound && element.nom.toUpperCase().includes(partName.toUpperCase())) {
+                        moniteurRes = element;
+                        isFound = true;
+                    }
+                });
+            }
+
+            if (name.split(" ").length >= 2) {
+                name.split(" ").forEach(partName => {
+                    if (!isFound && element.nom.includes(partName.toUpperCase())) {
+                        moniteurRes = element;
+                        isFound = true;
+                    }
+                });
+            } else {
+                if (!isFound && element.nom.toUpperCase().includes(name.toUpperCase())) {
+                    moniteurRes = element;
+                    isFound = true;
+                }
+            }
+        } else {
+            // cas d'un nom prenom ou inversement
+            if (nameMoniteur.split(" ").length >= 2) {
+                nameMoniteur.split(" ").forEach(partName => {
+                    if (!isFound && element.nom.includes(partName.toUpperCase())) {
+                        moniteurRes = element;
+                        isFound = true;
+                    }
+                });
+            } else {
+                if (element.nom.toUpperCase().includes(nameMoniteur.toUpperCase())) {
+                    moniteurRes = element;
+                    isFound = true;
+                }
+            }
+        }
+    });
+
+    console.log("Nom Moniteur recherche : ", nameMoniteur, " --> Nom moniteur trouve : ", moniteurRes.nom, " ", moniteurRes.prenom);
+    return moniteurRes;
+}
+
+
 function formatDateFromJSON(strDateFromJSON) {
     var pattern = /(\d{2})\/(\d{2})\/(\d{4})/;
     var strResult = strDateFromJSON.replace(pattern, '$3/$2/$1');
@@ -112,31 +196,56 @@ function createFormEdit(evenement) {
         //        + '<form method="post" action=\'index.html\'>'
         //        + '<form>'
         + '  <fieldset>'
-        + '    <label for="dateDemande">Date de la demande : <input id="dateDemande" name="dateDemande" type="date" disabled value="' + formatDateForInputHTML(evenement.dateDemande.toLocaleDateString()) + '"/></label>'
-        + '    <label for="dateDebut">Date de début : <input id="dateDebut" name="dateDebut" type="date" required value="' + formatDateForInputHTML(evenement.dateDebut.toLocaleDateString()) + '"/></label>'
-        + '    <label for="dateFin">Date de fin : <input id="dateFin" name="dateFin" type="date" required value="' + formatDateForInputHTML(evenement.dateFin.toLocaleDateString()) + '"/></label>'
-        + '    <label for="contact">Mail de contact : <input id="contact" name="contact" type="email" required value="' + evenement.contact + '"/></label>'
-        + '    <label for="lieu">Lieu : <input id="lieu" name="lieu" type="text" required value="' + evenement.lieu + '"/></label>'
+        + '    <div><label for="dateDemande">Date de la demande : <input id="dateDemande" name="dateDemande" type="date" disabled value="' + formatDateForInputHTML(evenement.dateDemande.toLocaleDateString()) + '"/></label></div>'
+        + '    <div><label for="dateDebut">Date de début : <input id="dateDebut" name="dateDebut" type="date" required value="' + formatDateForInputHTML(evenement.dateDebut.toLocaleDateString()) + '"/></label></div>'
+        + '    <div><label for="dateFin">Date de fin : <input id="dateFin" name="dateFin" type="date" required value="' + formatDateForInputHTML(evenement.dateFin.toLocaleDateString()) + '"/></label></div>'
         + '  </fieldset>'
         + '  <fieldset>'
-        + '    <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>'
-        + '    <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>'
-        + '    <label for="referrer">How did you hear about us?'
-        + '      <select id="referrer" name="referrer">'
-        + '        <option value="">(select one)</option>'
-        + '        <option value="1">freeCodeCamp News</option>'
-        + '        <option value="2">freeCodeCamp YouTube Channel</option>'
-        + '        <option value="3">freeCodeCamp Forum</option>'
-        + '        <option value="4">Other</option>'
+        + '    <div><label for="contact">Mail de contact : <input id="contact" name="contact" type="email" required value="' + evenement.contact + '"/></label></div>'
+        + '    <div><label for="lieu">Lieu : <input id="lieu" name="lieu" type="text" required value="' + evenement.lieu + '"/></label></div>'
+        + '    <div><label for="demandeur">Demandeur : '
+        + '      <select id="demandeur" name="demandeur" >'
+        + '        <option value="">(select one)</option>';
+    var selectStr = '';
+    demandeurs.forEach(element => {
+        selectStr = selectStr + '<option value="' + element.id + '"' + ((findDemandeurById(evenement.idDemandeur).id === element.id) ? ' selected' : '') + '>' + element.name + '</option>'
+    });
+    str = str + selectStr
         + '      </select>'
-        + '    </label>'
-        + '    <label for="bio">Provide a bio:'
-        + '      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>'
-        + '    </label>'
+        + '    </label></div>'
+        + '    <div><label for="partenaire">Partenaire : '
+        + '      <select id="partenaire" name="partenaire" >'
+        + '        <option value="">(select one)</option>';
+    var selectPartenaireStr = '';
+    demandeurs.forEach(element => {
+        selectPartenaireStr = selectPartenaireStr + '<option value="' + element.id + '"' + ((findDemandeurById(evenement.idPartenaire).id === element.id) ? ' selected' : '') + '>' + element.name + '</option>'
+    });
+    str = str + selectPartenaireStr
+        + '      </select>'
+        + '    </label></div>'
         + '  </fieldset>'
-        + '  <label for="terms-and-conditions">'
-        + '    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>'
-        + '  </label>'
+        + '  <fieldset>'
+        + '    <div><label for="presidentJury">Président de Jury : '
+        + '      <select id="presidentJury" name="presidentJury" >'
+        + '        <option value="">(select one)</option>';
+    var selectpresidentJuryStr = '';
+    moniteurs.forEach(element => {
+        selectpresidentJuryStr = selectpresidentJuryStr + '<option value="' + element.id + '"' + ((findMoniteurById(evenement.idPresidentJury).id === element.id) ? ' selected' : '') + '>' + element.nom + ' ' + element.prenom + '</option>'
+    });
+    str = str + selectpresidentJuryStr
+        + '      </select>'
+        + '    </label></div>'
+        + '    <div><label for="delegueCTR">Délégué CTR : '
+        + '      <select id="delegueCTR" name="delegueCTR" >'
+        + '        <option value="">(select one)</option>';
+    var selectDelegueCTRStr = '';
+    moniteurs.forEach(element => {
+        selectDelegueCTRStr = selectDelegueCTRStr + '<option value="' + element.id + '"' + ((findMoniteurById(evenement.idDelegueCTR).id === element.id) ? ' selected' : '') + '>' + element.nom + ' ' + element.prenom + '</option>'
+    });
+    str = str + selectDelegueCTRStr
+        + '      </select>'
+        + '    </label></div>'
+        + '  </fieldset>'
         + '  <button id="validatebutton">Valider</button>'
     //        + '</form>'
 
@@ -213,9 +322,9 @@ function initBDD() {
         var partenaire = { id: "", name: "nom", numero: "num", valeur: "val" };
         var lieu = '';
         var contact = '';
-        var delegueCTR = '';
-        var presidentJury = '';
-        var repCIBPL = '';
+        var delegueCTR = { id: "", nom: "", prenom: "", niveau: "num" };
+        var presidentJury = { id: "", nom: "", prenom: "", niveau: "num" };
+        var repCIBPL = { id: "", nom: "", prenom: "", niveau: "num" };
         for (var iVal = 0; iVal < row.c.length; iVal++) {
             var val = row.c[iVal];
             if (val != null) {
@@ -245,13 +354,13 @@ function initBDD() {
                         lieu = val.v;
                         break;
                     case 12: // Proposition delegue CTR + mail
-                        delegueCTR = val.v;
+                        delegueCTR = findMoniteurByName(val.v);
                         break;
                     case 13: // propsition president jury
-                        presidentJury = val.v;
+                        presidentJury = findMoniteurByName(val.v);
                         break;
                     case 14: // proposition representant CIBPL
-                        repCIBPL = val.v;
+                        repCIBPL = findMoniteurByName(val.v);
                         break;
                     case 15:// Mail de contact
                         contact = val.v;
@@ -269,9 +378,9 @@ function initBDD() {
             idPartenaire: partenaire.id,
             contact: contact,
             lieu: lieu,
-            presidentJury: presidentJury,
-            delegueCTR: delegueCTR,
-            repCIBPL: repCIBPL,
+            idPresidentJury: presidentJury.id,
+            idDelegueCTR: delegueCTR.id,
+            idRepCIBPL: repCIBPL.id,
             statut: statut.DEMANDE,
             dateValidation: new Date()
         };
@@ -296,8 +405,8 @@ function updateTableau(evenements) {
                 + '<td>' + event.lieu + '</td>'
                 + '<td>' + findDemandeurById(event.idDemandeur).name + ((event.idPartenaire != '') ? ' avec ' + findDemandeurById(event.idPartenaire).name : '') + '</td>'
                 + '<td class="mailAdress">' + event.contact + '</td>'
-                + '<td>' + event.presidentJury + '</td>'
-                + '<td>' + event.delegueCTR + '</td>'
+                + '<td>' + findMoniteurById(event.idPresidentJury).nom + ' ' + findMoniteurById(event.idPresidentJury).prenom + '</td>'
+                + '<td>' + findMoniteurById(event.idDelegueCTR).nom + ' ' + findMoniteurById(event.idDelegueCTR).prenom + '</td>'
                 + '<td class="date">' + event.dateValidation.toLocaleDateString() + '</td>'
                 + '<td class="statut">' + event.statut + '</td>'
                 + '</tr>';
