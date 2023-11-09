@@ -1,5 +1,11 @@
 [
     {
+        "id":"type-00",
+        "name":"All",
+        "type":"All",
+        "valeur": "All"
+    },
+    {
         "id":"type-01",
         "name":"Stage final GP",
         "type":"N4-GP",

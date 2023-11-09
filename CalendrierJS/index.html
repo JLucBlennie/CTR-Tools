@@ -22,14 +22,19 @@
             <p>Voici la liste de demandes de stages et examen faites par les CTD et Structures de BPL. Il est possible
                 d'afficher toutes les dates mais aussi de filtrer :
             </p>
-            <label><input type="radio" name="typeclick" value="1" onclick="setConfig(event)" checked> toutes les
-                dates</label>
-            <label><input type="radio" name="typeclick" value="2" onclick="setConfig(event)"> Niveau 4 - GP</label>
-            <label><input type="radio" name="typeclick" value="2" onclick="setConfig(event)"> Initiateur</label>
-            <label><input type="radio" name="typeclick" value="3" onclick="setConfig(event)"> TSI</label>
-            <label><input type="radio" name="typeclick" value="4" onclick="setConfig(event)"> MF1</label>
-            <label><input type="radio" name="typeclick" value="2" onclick="setConfig(event)"> MF2</label>
-            <label><input type="radio" name="typeclick" value="2" onclick="setConfig(event)"> TIV</label>
+            <table class="filtre">
+                <tr id="filtre">
+                    <td id="Filtre-All" class="filtre">Toutes les dates</td>
+                    <td id="Filtre-N4-GP" class="filtre"> Niveau 4 - GP</td>
+                    <td id="Filtre-Initiateur" class="filtre"> Initiateur</td>
+                    <td id="Filtre-TSI" class="filtre"> TSI</td>
+                    <td id="Filtre-MF1" class="filtre"> MF1</td>
+                    <td id="Filtre-MF2" class="filtre"> MF2</td>
+                    <td id="Filtre-TIV" class="filtre"> TIV</td>
+                    <td id="Filtre-Secourisme" class="filtre"> Secourisme</td>
+                    <td id="Filtre-Handi" class="filtre"> Handi</td>
+                </tr>
+            </table>
         </section>
         <section role="region">
             <div class="tableFixHead">
@@ -51,7 +56,7 @@
                             <th>Statut</th>
                         </tr>
                     </thead>
-                    <tbody id="tbody">
+                    <tbody id="tbody" class="listeDate">
                     </tbody>
                 </table>
             </div>

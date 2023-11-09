@@ -157,6 +157,13 @@ td {
     padding: 8px 16px;
     border: 1px solid #ccc;
 }
+tr.filtre, tr.filtre:nth-child(even), tr.filtre:hover {
+    background-color: #fff;
+}
+td.filtre:hover {
+    background-color: rgb(104, 50, 205);
+    color: #fbfdfd;
+}
 
 th {
     background: #eee;
@@ -174,7 +181,7 @@ tbody tr:nth-child(even) {
     background-color: gainsboro;
 }
 
-tbody tr:hover {
+tbody tr#listeEvent:hover {
     background-color: yellowgreen;
 }
 

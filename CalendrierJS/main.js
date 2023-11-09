@@ -290,7 +290,7 @@ function selecteLigne(oEvent) {
   * Initialise/ Supprime  la selection par ligne
   */
 function initLigne() {
-    var aTr = document.querySelectorAll("tbody tr"), iNb = aTr.length;
+    var aTr = document.querySelectorAll("tbody.listeDate > tr"), iNb = aTr.length;
     for (var i = 0; i < iNb; i++) {
         aTr[i].removeAttribute("class");
         aTr[i].addEventListener(
@@ -389,6 +389,23 @@ function initBDD() {
     sauveBDD(evenements);
 }
 
+function afficheTableauDe(strTypeEvenement) {
+    deselectAllLines();
+    document.getElementById("edition").innerHTML = "";
+    var evenementRes = new Array();
+    if (strTypeEvenement != "Filtre-All") {
+        window.evenements.forEach(element => {
+            if (findTypeEvenementById(element.idType).type.toUpperCase() === strTypeEvenement.replace("Filtre-", "").toUpperCase()) {
+                evenementRes.push(element);
+            }
+        });
+    } else {
+        evenementRes = window.evenements;
+    }
+    document.getElementById("tbody").innerHTML = updateTableau(evenementRes);
+    initLigne();
+}
+
 function updateTableau(evenements) {
     //Ajout de lignes dans le tableau
     var str = "";
@@ -396,7 +413,7 @@ function updateTableau(evenements) {
     for (var i = 0; i < evenements.length; i++) {
         var event = evenements[i];
         if (event.dateDebut >= date) {
-            str = str + '<tr>'
+            str = str + '<tr id="listeEvent">'
                 + '<td class="date">' + event.dateDemande.toLocaleDateString() + ' ' + event.dateDemande.toLocaleTimeString() + '</td>'
                 + '<td class="typeEvenement">' + findTypeEvenementById(event.idType).name + '</td>'
                 + '<td>' + findDemandeurById(event.idDemandeur).name + '</td>'
@@ -428,10 +445,39 @@ function readBDDFile(strPath) {
                 return value;
             }
             window.evenements = JSON.parse(data.toString(), dateTimeReviver);
-            document.getElementById("tbody").innerHTML = updateTableau(evenements);
+            document.getElementById("tbody").innerHTML = updateTableau(window.evenements);
             initLigne();
         }
     });
 }
 
+function initFiltre() {
+    // Creation des cases
+    var str = "";
+    var typeDone = new Array();
+    typesEvenement.forEach(element => {
+        if (!typeDone.includes(element.type)) {
+            str = str +
+                '<td id="Filtre-' + element.type + '" class="filtre">' + element.type + '</td>';
+            typeDone.push(element.type);
+        }
+    });
+
+    document.getElementById("filtre").innerHTML = str;
+    // affectation des evenement de click
+    var aTd = document.querySelectorAll("td.filtre"), iNb = aTd.length;
+    console.log("Nb TD Filtres : ", iNb);
+    for (var i = 0; i < iNb; i++) {
+        var strId = aTd[i].getAttribute("id");
+        console.log("==> Id TD : ", strId);
+        aTd[i].addEventListener(
+            'click', (event) => {
+                console.log("Evt Td : ", event.currentTarget.getAttribute("id"));
+                afficheTableauDe(event.currentTarget.getAttribute("id"));
+            }
+        );
+    }
+}
+
+initFiltre();
 readBDDFile('./data/BDD.json');
