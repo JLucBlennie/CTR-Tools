@@ -46,11 +46,13 @@ export function EventList() {
     // Ligne de données avec couleur alternée
     function renderItem({ item, index }: { item: typeof initialData[0]; index: number }) {
         return (
-            <View style={[styles.row, index % 2 === 0 ? styles.evenRow : styles.oddRow]}>
-                <Text style={styles.cell}>{item.id}</Text>
-                <Text style={styles.cell}>{item.name}</Text>
-                <Text style={styles.cell}>{item.age}</Text>
-            </View>
+            <TouchableOpacity onPress={() => { console.log("Ligne numero : " + index) }}>
+                <View style={[styles.row, index % 2 === 0 ? styles.evenRow : styles.oddRow]}>
+                    <Text style={styles.cell}>{item.id}</Text>
+                    <Text style={styles.cell}>{item.name}</Text>
+                    <Text style={styles.cell}>{item.age}</Text>
+                </View>
+            </TouchableOpacity>
         );
     }
 
