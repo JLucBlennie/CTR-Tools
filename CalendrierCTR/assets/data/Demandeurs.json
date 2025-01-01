@@ -1,0 +1,87 @@
+[
+    {
+        "Name": "CTD 22",
+        "NumeroStructure": "03 22 00 00",
+        "UUID": "798256e1-5468-4e46-a4be-dbac41be9455"
+    },
+    {
+        "Name": "CTD 29",
+        "NumeroStructure": "03 29 00 00",
+        "UUID": "3165e2bb-7c30-4f3c-a9d8-bcdc6e34f23c"
+    },
+    {
+        "Name": "CTD 35",
+        "NumeroStructure": "03 35 00 00",
+        "UUID": "07cae1dc-2b97-4841-b29f-5195454b4dc0"
+    },
+    {
+        "Name": "CTD 44",
+        "NumeroStructure": "03 44 00 00",
+        "UUID": "d96a36b2-24fd-4a9a-a6c7-e65af3a693ee"
+    },
+    {
+        "Name": "CTD 49",
+        "NumeroStructure": "03 49 00 00",
+        "UUID": "f988c03e-84ab-4334-a9fd-4efc192d1325"
+    },
+    {
+        "Name": "CTD 53",
+        "NumeroStructure": "03 53 00 00",
+        "UUID": "23c9ae92-a232-4f3f-af91-ad392dff6570"
+    },
+    {
+        "Name": "CTD 56",
+        "NumeroStructure": "03 56 00 00",
+        "UUID": "a27d4e00-c929-47b7-8ae5-8a66eb1b2f51"
+    },
+    {
+        "Name": "CTD 72",
+        "NumeroStructure": "03 72 00 00",
+        "UUID": "e1a934f5-c8a1-41e1-bbb7-f68df31cf4d5"
+    },
+    {
+        "Name": "CTD 85",
+        "NumeroStructure": "03 85 00 00",
+        "UUID": "95715dc9-cfdf-49da-ba4f-43cd931555ec"
+    },
+    {
+        "Name": "CAP",
+        "NumeroStructure": "03 22 01 35",
+        "UUID": "064fe066-030e-453f-8ea5-9b5317989343"
+    },
+    {
+        "Name": "CIP GLENANS",
+        "NumeroStructure": "03 29 00 07",
+        "UUID": "767b7d39-dcf4-417f-bf17-cd8fa462b9e6"
+    },
+    {
+        "Name": "CAMARET",
+        "NumeroStructure": "03 29 01 41",
+        "UUID": "8c066929-3fba-49d5-86d4-6fbd28922628"
+    },
+    {
+        "Name": "SUBEVASION",
+        "NumeroStructure": "03 85 023 C",
+        "UUID": "00187198-10da-4bf2-a69b-c15827c1f6d2"
+    },
+    {
+        "Name": "MAITAI",
+        "NumeroStructure": "03 49 055 C",
+        "UUID": "fc18a85e-2d7a-4462-9642-36aabd94d052"
+    },
+    {
+        "Name": "CTR",
+        "NumeroStructure": "03 00 00 00",
+        "UUID": "5628b08d-4a2b-497c-9069-b8bf6f4e64e1"
+    },
+    {
+        "Name": "Du côté de Roussay ",
+        "NumeroStructure": "0349009C",
+        "UUID": "d0602e35-d193-4800-ac03-ea34625a39c8"
+    },
+    {
+        "Name": "CIP GLENAN (",
+        "NumeroStructure": "03 29 007)",
+        "UUID": "8442191c-1ad5-494f-b92a-09c55f1782a7"
+    }
+]

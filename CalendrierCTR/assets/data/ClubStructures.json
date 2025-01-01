@@ -1,0 +1,414 @@
+[
+    {
+        "Name": "La Marjolaine",
+        "UUID": "fec1ca8e-6e89-4558-a82f-6da2139bafab"
+    },
+    {
+        "Name": "SAP Saint Gilles",
+        "UUID": "a2c8f692-f2dd-421f-8567-3d6757599561"
+    },
+    {
+        "Name": "ASEAAC",
+        "UUID": "eaff22d4-bfbe-41f3-931e-6b9acac7c0fa"
+    },
+    {
+        "Name": "Club Aquatic Subguingampais (à confirmer)",
+        "UUID": "2733b25d-29e1-45f6-b0f3-85afc585d40a"
+    },
+    {
+        "Name": "Codep 53",
+        "UUID": "96b7af7f-1ac0-4107-99f8-77f04b1e562a"
+    },
+    {
+        "Name": "Fougères agglomération",
+        "UUID": "d76ea10c-8f0f-4fdd-8567-f55da27651ba"
+    },
+    {
+        "Name": "sub'evasion",
+        "UUID": "ae4865ed-dc96-4d71-9324-0b1448739805"
+    },
+    {
+        "Name": "sub.evasion",
+        "UUID": "0bf05958-6e88-4d66-9c7d-60b55ad113ba"
+    },
+    {
+        "Name": "Carroi",
+        "UUID": "8c2c3240-7193-49b3-b113-9fba517c1f89"
+    },
+    {
+        "Name": "CSL ou salle communale",
+        "UUID": "0e4a4209-559d-4021-a67f-2ec81c5620ee"
+    },
+    {
+        "Name": "CAROI",
+        "UUID": "16e6d880-ab54-489d-a794-06f96b5a8d35"
+    },
+    {
+        "Name": "CAP Trébeurden",
+        "UUID": "83e64e68-0799-459b-9938-6f786f8485da"
+    },
+    {
+        "Name": "MAISON DES SPORTS/PISCINE JEAN BOUIN",
+        "UUID": "aab5988b-992d-46c2-bc90-dc22d3e93b54"
+    },
+    {
+        "Name": "maison des sports  CDOS 18 rue pierre de Coubertin",
+        "UUID": "60d1bbaf-4bf8-4823-bea7-b18e78061c6b"
+    },
+    {
+        "Name": "Du côté de Roussay",
+        "UUID": "1041ff6f-d458-4e1c-857c-c7511ebc2647"
+    },
+    {
+        "Name": "Maitai Becon plongée",
+        "UUID": "60e1dd13-1ecb-4fbc-b795-c71972eb6d30"
+    },
+    {
+        "Name": "CODEP 22 Plongée Sous-Marine",
+        "UUID": "6112e58c-4cce-4be4-879f-4faca9172e1a"
+    },
+    {
+        "Name": "CIP Glénan",
+        "UUID": "0cbaae57-c15a-4f43-9d17-e14731291a2d"
+    },
+    {
+        "Name": "EVRON",
+        "UUID": "e5cf6b82-9914-4f81-b984-c320fb885aca"
+    },
+    {
+        "Name": "CNT",
+        "UUID": "5219cc5f-c165-4aef-a560-9ebe255aebf2"
+    },
+    {
+        "Name": "codep35",
+        "UUID": "e2e12f32-5616-492e-b087-54c7bc9b1a02"
+    },
+    {
+        "Name": "CTD44",
+        "UUID": "ffcc027a-4575-4ef3-b09a-4dc37525232b"
+    },
+    {
+        "Name": "CSL ou Atlantis club, à confirmer",
+        "UUID": "f8585bfc-bcba-46f8-97dd-9f4faffa9a52"
+    },
+    {
+        "Name": "CSL",
+        "UUID": "8ff79dda-9d35-409c-81cc-9f1793feea8a"
+    },
+    {
+        "Name": "Nautilus",
+        "UUID": "3c6ff9c1-8696-4a69-9283-d60451f2eb6c"
+    },
+    {
+        "Name": "Salle plan d'eau de la Gémerie",
+        "UUID": "fe2905df-a57a-4d39-b6dd-d1c949c12a33"
+    },
+    {
+        "Name": "CODEP",
+        "UUID": "71ad5784-647f-4d11-8834-04a66f6ff215"
+    },
+    {
+        "Name": "CTD56",
+        "UUID": "e9629968-cfca-447c-b054-7f870f133afb"
+    },
+    {
+        "Name": "Subagrec",
+        "UUID": "f293cf5a-c19c-4ae0-975a-11315b4be3f6"
+    },
+    {
+        "Name": "ASAL",
+        "UUID": "ab8d1960-b1ab-46af-9053-e847bd940ae2"
+    },
+    {
+        "Name": "CODEP 44",
+        "UUID": "bfbb13eb-c610-4851-9a16-1a385f728059"
+    },
+    {
+        "Name": "Maison des Sports de Rennes (2 journées de 9h00 à 18h00)",
+        "UUID": "7385d62d-e087-4259-9693-b7ebdd05fc58"
+    },
+    {
+        "Name": "Maison des sports de Rennes (2 soirées de 18h00 à 22h00)",
+        "UUID": "388920b7-8acf-4c01-a265-d6ac5800193d"
+    },
+    {
+        "Name": "Maison des sports",
+        "UUID": "f554d089-84ab-4cd3-a5b4-e277f3da5ec2"
+    },
+    {
+        "Name": "CTD35",
+        "UUID": "74088e18-3883-4cb2-9c84-b6349376eb95"
+    },
+    {
+        "Name": "CTD 22 (03 22 00 00)",
+        "UUID": "cb990962-73c6-405a-ae71-ce8788825e4d"
+    },
+    {
+        "Name": "CTD 56 (03 56 00 00)",
+        "UUID": "5169aa8e-d967-4a6b-b3c2-fca6b5911d80"
+    },
+    {
+        "Name": "CTD 29 (03 29 00 00)",
+        "UUID": "db3eb6be-7923-4c07-a695-85eee3d96b66"
+    },
+    {
+        "Name": "CTD 49 (03 49 00 00)",
+        "UUID": "efa8ff75-83b2-4de0-90c4-055d0f0ad442"
+    },
+    {
+        "Name": "CTD 35 (03 35 00 00)",
+        "UUID": "3c946063-34a4-4ecd-87d3-fec496f23566"
+    },
+    {
+        "Name": "CAP TREBEURDEN (03 22 01 35)",
+        "UUID": "af95ad24-a767-4820-a6b4-52d94354304b"
+    },
+    {
+        "Name": "CTD 44 (03 44 00 00)",
+        "UUID": "c10c0e4d-2394-4816-b3b7-665dd6be6bb4"
+    },
+    {
+        "Name": "Base plongée Léo lagrange",
+        "UUID": "b2465c84-e03e-432a-b6df-61f52ebdcc37"
+    },
+    {
+        "Name": "CAMARET (03 29 01 41)",
+        "UUID": "e5f00a91-2858-4134-b24b-e5eebe5fe830"
+    },
+    {
+        "Name": "CPC",
+        "UUID": "c400d583-8acf-45e8-8932-21290924dacb"
+    },
+    {
+        "Name": "Codep et mf2 région ",
+        "UUID": "cd1b41b6-7e18-4281-8413-fa871caa3367"
+    },
+    {
+        "Name": "cip glenan",
+        "UUID": "6ba37965-c20c-4821-896d-7b63dcc54575"
+    },
+    {
+        "Name": "CTD29",
+        "UUID": "8d762acd-b09f-4534-b69b-37c1440fd7c9"
+    },
+    {
+        "Name": "CTD 29",
+        "UUID": "396fe94b-7e4f-4ec5-9ad3-03de752e5864"
+    },
+    {
+        "Name": "CODEP53",
+        "UUID": "20448ec8-359e-41f2-b87d-7f0789638515"
+    },
+    {
+        "Name": "piscine de Luçon",
+        "UUID": "a2bac819-fb95-4131-ae8d-fff248f0b45f"
+    },
+    {
+        "Name": "M§AISON DES SPORTS",
+        "UUID": "2e46a7e5-35b5-4994-a059-035e27df9889"
+    },
+    {
+        "Name": "MAITAI BECON PLONGEE",
+        "UUID": "c19e2026-7ce7-4f02-9b70-e7be8389b029"
+    },
+    {
+        "Name": "CTD 72 (03 72 00 00)",
+        "UUID": "83196ba6-af4e-41cc-a664-815b9a59898c"
+    },
+    {
+        "Name": "CTD 85 (03 85 00 00)",
+        "UUID": "5262dbfb-e0f5-434a-81ce-f2c9a82114d6"
+    },
+    {
+        "Name": "Histoire d'eau",
+        "UUID": "b2bfe761-be70-4cfd-b7c5-b22d9d87c48b"
+    },
+    {
+        "Name": "CTD22",
+        "UUID": "8e4ce316-788f-43a8-a9a9-97fb1b5cc27a"
+    },
+    {
+        "Name": "CTD53",
+        "UUID": "9852fa27-1044-42c1-b46e-33d6fa6ce379"
+    },
+    {
+        "Name": "CSL et/ou CIBPL",
+        "UUID": "9acdfc15-7d5d-40b7-91f5-a4310a92d0b0"
+    },
+    {
+        "Name": "A définir",
+        "UUID": "25d88eb3-d0a2-487d-ab70-7bd8df29ee6f"
+    },
+    {
+        "Name": "1 définir",
+        "UUID": "6fe71b1e-360b-40d1-9bc4-f20da31d3637"
+    },
+    {
+        "Name": "PEPS La Marjolaine",
+        "UUID": "62b7a13b-2cd0-4054-9513-7fbc4aa0a152"
+    },
+    {
+        "Name": "salle municipale",
+        "UUID": "5f386d6b-8402-4fb1-8320-3e3546bb35a5"
+    },
+    {
+        "Name": "AGAG ",
+        "UUID": "9c6a510a-6369-4a8d-bfe7-23fc63a7fc62"
+    },
+    {
+        "Name": "AGAG",
+        "UUID": "c72c27f4-9ab1-4b7d-9fa2-ce0c1d8603be"
+    },
+    {
+        "Name": "La Marjolaine (44420)",
+        "UUID": "e4ff0f79-efd6-404d-a9b8-55a5c32772d8"
+    },
+    {
+        "Name": "SUB EVASION",
+        "UUID": "67f65ac1-47a7-4f2c-945d-94ae6e84700f"
+    },
+    {
+        "Name": "CTD 35 CODEP 35",
+        "UUID": "7f5df1dd-f579-4001-ab8e-3304f9149040"
+    },
+    {
+        "Name": "LEO LAGRANGE / CAMARET",
+        "UUID": "30d5aa1a-ac15-4922-8030-d5f0155f17e9"
+    },
+    {
+        "Name": "Club CPC",
+        "UUID": "0b8b48c6-6591-42b2-be77-5b0568e9eb21"
+    },
+    {
+        "Name": "CAP TREBEURDEN",
+        "UUID": "3f08f50b-5a5f-4946-b7e8-e36a6fff050d"
+    },
+    {
+        "Name": "ECOLE DU GENIE",
+        "UUID": "ce115b02-53ee-4a1c-80aa-d1f105ceaaca"
+    },
+    {
+        "Name": "GASM QUIMPER",
+        "UUID": "c6fdd59c-47f8-43bf-b508-d26d11f9c040"
+    },
+    {
+        "Name": "Club subaquatique lavallois ",
+        "UUID": "8d931c05-1532-48df-8f93-72e4fe963737"
+    },
+    {
+        "Name": "CODEP 29",
+        "UUID": "0051fa4e-f344-4051-b8aa-f57873c5baa4"
+    },
+    {
+        "Name": "CSI",
+        "UUID": "60288b76-4055-4d38-be53-76adf125b2d8"
+    },
+    {
+        "Name": "CSA",
+        "UUID": "9d173022-72e0-451b-989d-f8ad6bc870ec"
+    },
+    {
+        "Name": "Le Carroi",
+        "UUID": "3c1d8822-aac8-4445-a620-42ba3b383cfd"
+    },
+    {
+        "Name": "CSCE",
+        "UUID": "e4bfd613-27c1-49f0-8cdc-c89d7c2d84a3"
+    },
+    {
+        "Name": "MAITAI BECON",
+        "UUID": "fc8a89b7-1caa-4070-8ea4-5d7bc965d0f2"
+    },
+    {
+        "Name": "Base fédrale",
+        "UUID": "f7774bc9-debb-473e-a5ca-80b483027556"
+    },
+    {
+        "Name": "Base Fédérale",
+        "UUID": "6dd94b6e-9832-4864-ad29-eb94f664a04b"
+    },
+    {
+        "Name": "Base Fédarale",
+        "UUID": "f7629e97-54da-40a0-aa31-e1dd3b7e3ffe"
+    },
+    {
+        "Name": "Site adapté, Bon support pédagogique",
+        "UUID": "1ff9291f-45ce-4901-bf1f-f99473de3c8a"
+    },
+    {
+        "Name": "Cdt 53",
+        "UUID": "55e4ecb0-b3aa-4f6b-b6b0-991e1d811ad6"
+    },
+    {
+        "Name": "CARRIERE DES FRESNAIES",
+        "UUID": "1c17e6ad-414f-46cb-ba67-3972cf3d6a4f"
+    },
+    {
+        "Name": "PISCINE ECOLE DU GENIE",
+        "UUID": "4009e9d3-1217-463b-af3f-63bd732c6012"
+    },
+    {
+        "Name": "Piscine municipal d'Allonnes Club Nautica",
+        "UUID": "6bffed60-2350-42a4-9c72-d4fc5825c603"
+    },
+    {
+        "Name": "Maïtaï Bécon Plongée",
+        "UUID": "58088404-b4e5-4907-8e9d-7c4dd5b6a79e"
+    },
+    {
+        "Name": "MAITAI",
+        "UUID": "a98a4a7c-a6fe-403b-a219-1ec6c0ec756f"
+    },
+    {
+        "Name": "CPC et KAS",
+        "UUID": "d2b59ceb-536a-44c1-883b-9663abe6743e"
+    },
+    {
+        "Name": "SMPE",
+        "UUID": "b4e34dae-a1d9-4bb5-9c60-02a115bae141"
+    },
+    {
+        "Name": "Maison des Sports, 13b av. de Cucillé",
+        "UUID": "86e22063-2181-48e9-92a2-eddc18e9c284"
+    },
+    {
+        "Name": "SUBAQUATIC CLUB GUINGAMPAIS",
+        "UUID": "7c52a30f-ba7c-4afc-ada9-249a375e48ea"
+    },
+    {
+        "Name": "Codep 72",
+        "UUID": "def425d8-0c5a-451f-b826-fabf60e77525"
+    },
+    {
+        "Name": "CoDep56",
+        "UUID": "bae9c919-99b4-4110-bb5c-759733bc4550"
+    },
+    {
+        "Name": "MAITAI (03 49 055 C)",
+        "UUID": "bc95dd3d-0f6d-40d1-b64c-dfe99ea05e4c"
+    },
+    {
+        "Name": "subaquatic club guingangais",
+        "UUID": "75a85f4b-f172-41b3-baa5-dec933770f41"
+    },
+    {
+        "Name": " ",
+        "UUID": "1287a5f4-334d-4fc5-9024-ab56e4829219"
+    },
+    {
+        "Name": "Plongée 29 Pays Léonard - 03-29-0434",
+        "UUID": "c1a0bddc-a82a-4c95-a7d2-d35dd51e048d"
+    },
+    {
+        "Name": "Maison des Sports - Rennes",
+        "UUID": "410577d1-29cf-4003-acc3-530b33a19a53"
+    },
+    {
+        "Name": "codep35 + clubs",
+        "UUID": "85cc8ccf-37ee-478a-a7c9-44848aad7e93"
+    },
+    {
+        "Name": "CODEP 22",
+        "UUID": "3b01e306-d926-4333-b3ff-1a6f2d00e654"
+    }
+]

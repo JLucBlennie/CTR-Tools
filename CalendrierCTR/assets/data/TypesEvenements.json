@@ -1,0 +1,146 @@
+[
+    {
+        "Name": "Stage final GP",
+        "Type": 1,
+        "UUID": "b78a75e9-da16-48db-ad63-83fb81e2ba92",
+        "Valeur": "Stage GP-N4 (Information)"
+    },
+    {
+        "Name": "Stage Initial Initiateur",
+        "Type": 2,
+        "UUID": "6dd89a9e-6042-49e8-965c-0ac5e5d58072",
+        "Valeur": "Déclaration de stage initial Initiateur"
+    },
+    {
+        "Name": "TSI",
+        "Type": 3,
+        "UUID": "9e353bf2-ca63-4596-9afc-2dc00bb17c71",
+        "Valeur": "Déclaration de stage TSI"
+    },
+    {
+        "Name": "Examen Initiateur",
+        "Type": 2,
+        "UUID": "b5798ee6-6478-4159-a23c-aa661f32de08",
+        "Valeur": "Déclaration d'examen Initiateur"
+    },
+    {
+        "Name": "Examen GP",
+        "Type": 1,
+        "UUID": "d46e537b-66b4-4a7a-99b1-0046de1a613e",
+        "Valeur": "Demande d'examen GP-N4"
+    },
+    {
+        "Name": "Module 6-20",
+        "Type": 2,
+        "UUID": "8e721101-6bd1-49c3-a47c-fc7f33ac504a",
+        "Valeur": "Demande de module complémentaire 6-20m"
+    },
+    {
+        "Name": "Module 20-40",
+        "Type": 2,
+        "UUID": "cd94785b-7c9b-472c-bd65-4c9440c0cf45",
+        "Valeur": "Demande de module complémentaire 20-40m"
+    },
+    {
+        "Name": "Stage Initial MF1",
+        "Type": 4,
+        "UUID": "ab153104-b6de-4511-a20d-543c89db3a8a",
+        "Valeur": "Stage Initial MF1 (CTR-Délégation)"
+    },
+    {
+        "Name": "Stage final MF1",
+        "Type": 4,
+        "UUID": "b9e1e075-62c8-408b-94ca-c069b7f3e753",
+        "Valeur": "Stage Final MF1 (CTR)"
+    },
+    {
+        "Name": "Examen MF1",
+        "Type": 4,
+        "UUID": "d9ce67af-abc8-4cf2-8bb9-f120bed69888",
+        "Valeur": "Examen MF1 (CTR)"
+    },
+    {
+        "Name": "TIV Initial",
+        "Type": 6,
+        "UUID": "ca6ec215-41fb-4e01-a719-8ae05c6d8fd9",
+        "Valeur": "TIV"
+    },
+    {
+        "Name": "TIV Recyclage",
+        "Type": 6,
+        "UUID": "57cca574-481a-4c14-ac73-8ef0d21994f2",
+        "Valeur": "TIV Recyclage"
+    },
+    {
+        "Name": "ANTEOR",
+        "Type": 7,
+        "UUID": "eefb4eec-4124-4a83-89ab-175fc2708970",
+        "Valeur": "ANTEOR"
+    },
+    {
+        "Name": "RIFAP",
+        "Type": 7,
+        "UUID": "d04834ab-73ab-4225-86cf-abeff5ee284f",
+        "Valeur": "RIFAP (Information)"
+    },
+    {
+        "Name": "THA",
+        "Type": 1,
+        "UUID": "2da57ce2-b14a-4c69-9c23-aa3314f73bc7",
+        "Valeur": "Théorie Anticipée (CTR)"
+    },
+    {
+        "Name": "HANDI PESH 6",
+        "Type": 8,
+        "UUID": "739c2fd2-668f-45ef-9501-6c7165517f49",
+        "Valeur": "Handi PESH 6"
+    },
+    {
+        "Name": "HANDI PESH 12",
+        "Type": 8,
+        "UUID": "7ea4e7da-d06a-4cb7-89e3-89b62bc51e9d",
+        "Valeur": "Handi PESH 12"
+    },
+    {
+        "Name": "HANDI PESH 20",
+        "Type": 8,
+        "UUID": "43d51248-5d2f-4239-865d-03e38060f952",
+        "Valeur": "Handi PESH 20"
+    },
+    {
+        "Name": "HANDI PESH 40",
+        "Type": 8,
+        "UUID": "061eac89-b907-4c9a-9620-17bc1146c8a7",
+        "Valeur": "Handi PESH 40"
+    },
+    {
+        "Name": "HANDI EH1",
+        "Type": 8,
+        "UUID": "00df7cb1-b592-45c1-b11f-1bed3825f775",
+        "Valeur": "Handi EH1"
+    },
+    {
+        "Name": "HANDI EH2",
+        "Type": 8,
+        "UUID": "aa0d64d8-f285-4187-9ec3-d512af7faad8",
+        "Valeur": "Handi EH2"
+    },
+    {
+        "Name": "HANDI MFEH1",
+        "Type": 8,
+        "UUID": "bfdb374d-1622-4a78-afd9-d60b8466b30d",
+        "Valeur": "Handi MF EH1"
+    },
+    {
+        "Name": "HANDI MFEH2",
+        "Type": 8,
+        "UUID": "5b2e6f9c-62a7-4b19-af3a-927f71fe527d",
+        "Valeur": "Handi MF EH2"
+    },
+    {
+        "Name": "HANDI MPC",
+        "Type": 8,
+        "UUID": "5734fbd1-1a23-4c49-971f-0394e8cbb222",
+        "Valeur": "Handi Module MPC"
+    }
+]
