@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+import * as FileSystem from 'expo-file-system';
+
 const { width } = Dimensions.get('window');
 
 // Données initiales
@@ -14,6 +16,8 @@ export function EventList() {
     const [sortColumn, setSortColumn] = useState<"id" | "name" | "age" | null>(null);
     const [isAscending, setIsAscending] = useState(true);
 
+    readBDD();
+
     // Fonction pour trier les données
     function sortData(column: "id" | "name" | "age") {
         const sortedData = [...data].sort((a, b) => {
@@ -25,6 +29,32 @@ export function EventList() {
         setSortColumn(column);
         setIsAscending((prev) => (sortColumn === column ? !prev : true));
     };
+
+    function readBDD() {
+        const fileUri = FileSystem.documentDirectory + 'forms.csv';
+        FileSystem.downloadAsync("https://docs.google.com/spreadsheets/d/137pH1G26uQYdFMw6kWe-ms9uOHW6MLiwAjrzKOYlsw0/gviz/tq?tqx=out:csv&tq=select+*&gid=615498791", fileUri).then(
+            (uriBDD) => {
+                console.log("Téléchargement réussi --> " + uriBDD.uri);
+                FileSystem.readAsStringAsync(uriBDD.uri).then(
+                    (filecontent) => {
+                        console.log("contenu du fichier : " + filecontent);
+                        const rows = filecontent.split("\n").map(
+                            (row) => {
+                                row.split(',').map((val, index) => console.log("valeur(" + index + ") : " + val));
+                            });
+                    }
+                ).catch(
+                    (err) => {
+                        console.log("Erreur lors de la lecture du fichier : " + err);
+                    }
+                );
+            }
+        ).catch(
+            (err) => {
+                console.log("Pb lors du téléchargement du résultat des questionnaire dans le fichier " + fileUri + "\n Erreur " + err);
+            }
+        );
+    }
 
     // Ligne d'en-tête avec tri
     function renderHeader() {
